@@ -6,6 +6,9 @@ turtolebotmsg
 
 all files are included in release zip file 
 
+## Downloads
+[release](https://github.com/DGIST-ARTIV/openCR-Imu/releases/)
+
 
 ## out topic
 * /opencr/imu_yaw <Float64>
