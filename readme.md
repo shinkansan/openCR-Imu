@@ -1,5 +1,11 @@
 # openCR IMU by shinkansan
 
+## Dependencies
+rosserial-python
+turtolebotmsg
+
+all files are included in release zip file 
+
 
 ## out topic
 * /opencr/imu_yaw <Float64>
