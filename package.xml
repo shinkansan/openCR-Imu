@@ -6,6 +6,8 @@
     openCR IMU
   </description>
   <license>Apache 2.0</license>
+  <author>gawnjun shin</author>
+  <maintainer email="shinkansan@dgist.ac.kr">gawnjun shin</maintainer>
 
   <buildtool_depend>catkin</buildtool_depend>
   <depend>roscpp</depend>
