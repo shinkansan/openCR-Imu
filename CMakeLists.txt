@@ -45,13 +45,20 @@ include_directories(
 )
 
 add_executable(imu_yaw src/imu_toEuler.cpp)
+add_executable(imu_calib src/imuCalib.cpp)
 add_dependencies(imu_yaw ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(imu_calib ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 target_link_libraries(imu_yaw ${catkin_LIBRARIES})
+target_link_libraries(imu_calib ${catkin_LIBRARIES})
 
 ################################################################################
 # Install
 ################################################################################
 install(TARGETS imu_yaw
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+install(TARGETS imu_calib
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

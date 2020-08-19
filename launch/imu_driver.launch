@@ -7,7 +7,7 @@
     <param name="tf_prefix" value="$(arg multi_robot_name)"/>
 
   </node>
-  <node pkg="opencrImu" type="imu_yaw" name="imu_recallbck" output="screen">
+  <node pkg="opencrImu" type="imu_calib" name="imu_recallbck" output="screen">
 
 
   </node>
